@@ -1,14 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>About</title>
-    <link rel="stylesheet" href="style.css">
+  <title>Gabriel Pascari | Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .fakeimg {
+      height: 200px;
+      background: #aaa;
+    }
+
+    @keyframes backgroundAnimated{
+      0%{
+          background-color: #730000;
+      }
+      50%{
+          background-color: #330101;
+      }
+      100%{
+          background-color: #730000;
+      }
+    }
+
+    .animatedBackground{
+    	animation-name: backgroundAnimated;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+    
+    .boxingVariants{
+    	font-size: 2rem; 
+        margin: 0 0 0 150px;
+        font-weight: bold;
+        color: #730000;
+    }
+    
+    b{
+    	color: #730000;
+    }
+    
+    img{
+    	margin: 0 0 50px 0;
+    }
+  </style>
 </head>
 <body>
-    <a href="index.html">Home</a>
-    <h1>This is Classwork 2 about CSS multipage</h1>
-    <h2 id="head2">I love HTML and CSS</h2>
+
+<div class="p-5 text-white text-center animatedBackground">
+  <h1>Gabriel Pascari</h1>
+  <p>Boxer</p> 
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About Box</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-5">
+<h2 class="mt-5" style="font-size: 4rem">About Box:</h2>
+<br>
+  <div class="row">
+      <p style="font-size: 2rem; text-indent: 50px;"><b>Boxing</b> is a combat sport and a martial art in which two people, usually wearing protective gloves and other protective equipment such as hand wraps and mouthguards, throw punches at each other for a predetermined amount of time in a boxing ring. </p>
+      <br>
+      <p style="font-size: 2rem; text-indent: 50px;">Although the term <b>boxing</b> is commonly attributed to Western boxing, in which only fists are involved, it has developed in different ways in different geographical areas and cultures of the World. <b>Boxing</b> techniques have been incorporated into many martial arts, military systems, and other combat sports.</p>
+      <br>
+      <p style="font-size: 2rem; text-indent: 50px;">In global terms, "<b>boxing</b>" today is also a set of combat sports focused on striking, in which two opponents face each other in a fight using at least their fists, and possibly involving other actions such as kicks, elbow strikes, knee strikes, and headbutts, depending on the rules. </p>
+      <p style="font-size: 2rem; text-indent: 50px;">Some of these variants are the:</p>
+      <ol class="boxingVariants">
+      	<li>Bare-knuckle boxing</li>
+        <li>kickboxing</li>
+        <li>Muay Thai</li>
+        <li>Lethwei</li>
+        <li>Savate</li>
+        <li>Sanda</li>
+      </ol>
+
+      <hr style="margin: 50px 0 50px 13px">
+      <br>
+      <br>
+      <h2 class="mt-5" style="font-size: 4rem">My Portofolio About <b>Boxing</b>:</h2>
+      <img src="https://img.freepik.com/free-photo/two-professional-boxer-boxing-black-smoky_155003-14259.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1702684800&semt=ais" display=block>
+      <img src="https://images.gsp.ro//usr/thumbs/thumb_540_x_360/2015/05/05/661972-mike-tyson.jpg?force=1" display=block>
+      <img src="https://www.boxverband.de/wp-content/uploads/2020/04/678381-wm-2019-maenner-01-678x381.jpg" display=block>
+      <img src="https://images.immediate.co.uk/production/volatile/sites/3/2023/02/Jake-Paul-v-Tommy-Fury-rematch-ee9de62-e1687337124751.jpg?quality=90&resize=980,654" display=block>
+      <img src="https://cdn.offenblende.de/wp-content/uploads/Sport_Boxen_Boxkampf_Agate_ALM-1-1920x1371.jpg" display=block>
+  </div>
+</div>
+
+<div class="mt-5 p-4 text-white text-center animatedBackground" style="border-top: 5px solid black">
+  <p>2023 © Gabriel Pascari</p>
+</div>
+
 </body>
 </html>
